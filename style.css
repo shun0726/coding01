@@ -1,0 +1,396 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.txtm {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.txtl {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+
+/*------------header--------------*/
+
+li{
+    list-style:none;
+  }
+  /* baseに記述 */
+  a{
+      text-decoration: none;
+      color:#fff;
+  }
+  
+  .header{
+  /*  背景色 */
+      background-color: #1B1310;
+  /*  文字色 */
+      color: #fff;
+  /* 高さ指定 */
+      height:74px;
+  /* 要素の横並び（flexbox） */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  /* 左右の余白 */
+      padding: 0 120px;
+  /* 下線 */
+      border-bottom:1px solid #fff;
+
+  }
+  .nav-list{
+      /* navの横並び */
+      display: flex;
+  }
+  .nav-item{
+      /* メニューの右側に余白 */
+      margin-right: 55px;
+  }
+
+  .toggle {
+      display: none;
+  }
+
+  .global_nav {
+      display: none;
+  }
+
+/*-------------main-----------*/
+
+main {
+    text-align: center;
+}
+
+.main-image {
+    background-image: url(img/fv-bgi@2x.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 740px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+main p {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.box {
+    width: 300px;
+    border: 2px solid #fff;
+    padding: 20px;
+}
+
+/*------------about-------------*/
+
+.about {
+    padding: 60px 0;
+}
+
+.about h2 {
+    color: black;
+    text-align: center;
+}
+
+.about h3 {
+    color: black;
+    text-align: left;
+    letter-spacing: 2px;
+    line-height: 40px;
+    margin-top: 50px;
+}
+
+.about p {
+    color: black;
+    text-align: left;
+    padding: 40px 0;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+/*------------service--------------*/
+
+.service {
+    padding: 60px 0;
+}
+
+.service h2 {
+    color: black;
+}
+
+.service h3 {
+    color: black;
+    text-align: left;
+    letter-spacing: 2px;
+    line-height: 40px;  
+}
+
+.service p {
+    color: black;
+    text-align: left;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.section-first {
+    display: flex;
+    margin-top: 50px;
+}
+
+.section-right {
+    padding: 20px 40px;
+}
+
+.section-second {
+    display: flex;
+    margin-top: 40px;
+}
+
+/*-----------news---------------*/
+
+.news {
+    padding: 60px 0;
+}
+
+.news h2 {
+    color: black;
+}
+
+.news img {
+    margin-top: 50px;
+    width: 300px;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.flexbox p {
+    color: black;
+    padding: 30px;
+    text-align: left;
+}
+
+
+/*----------contact---------------*/
+
+.contact {
+    padding: 60px 0;
+}
+
+.contact h2 {
+    color: black;
+    margin-bottom: 50px;
+}
+
+.form {
+    text-align: center;
+}
+
+input, textarea {
+    width: 60%;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+input.submit {
+    width: 20%;
+    color: #fff;
+    background-color: black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/*-----------footer------------*/
+
+footer {
+    background-color: #1B1310;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 12px;  
+}
+
+
+/*-------------スマホ---------------------*/
+/*-------------スマホ---------------------*/
+/*-------------スマホ---------------------*/
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .site-title {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .header {
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-wrapper {
+        display: none;
+    }
+    .main-image {
+    background-image: url(img/fv-bgi_sp@2x.jpg);
+    }
+
+    .section-first {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .section-second {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-right {
+        padding: 0;
+    }
+
+    .flexbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .news img {
+        width: 100%;
+    }
+
+    input, textarea {
+        width: 80%;
+        font-size: 14px;
+        border: 1px solid lightgray;
+    }
+
+    /*-------------burger----------------*/
+
+    .nav-wrapper {
+        display: none;
+    }
+
+    .toggle {
+        position: fixed; /* bodyに対しての絶対位置指定 */
+        right: 13px;
+        top: 13px;
+        display: block;
+        width: 45px;
+        height: 50px;
+        cursor: pointer;
+        z-index: 3;
+        background: #ccc;
+    }
+    .toggle span {
+        display: block;
+        position: absolute; /* .toggleに対して */
+        width: 70%;
+        border-bottom: solid 3px #000;
+        -webkit-transition: .35s ease-in-out;
+        -moz-transition: .35s ease-in-out;
+        transition: .35s ease-in-out;
+        padding-top: 5px;
+        right: 7px;
+    }
+    .toggle span:nth-child(1) {
+        top: 3px;
+    }
+    .toggle span:nth-child(2) {
+        top: 13px;
+    }
+    .toggle span:nth-child(3) {
+        top: 23px;
+    }
+    .toggle span:nth-child(4) {
+        border: none;
+        top: 28px;
+        left: 5px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+        /* 最初のspanをマイナス45度に */
+    .toggle.active span:nth-child(1) {
+        top: 15px;
+        left: 4px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    /* 2番目と3番目のspanを45度に */
+    .toggle.active span:nth-child(2),
+    .toggle.active span:nth-child(3) {
+        top: 15px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    /* .global_nav */
+    .global_nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translateY(-100%);
+        z-index: 2;
+        padding-top: 50px;
+        text-align: center;
+        color: #000;
+        background: #ccc;
+        transition: all 0.8s;  
+    }
+    .global_nav .nav_li {
+        width: 100%;
+        padding: 10px 0;
+        list-style-type: none;
+    }
+    .global_nav .nav_li a {
+        display: block;
+        color: #000;
+    }
+
+    /* .global_navに.activeが追加 */
+    .global_nav.active {
+        transform: translateY(0%);
+    }
+
+    input.submit {
+        width: 70%;
+
+}  
